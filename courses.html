@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuing Education Courses | Healica Massage Therapy</title>
+    <meta name="description" content="Hands-on certification courses for massage therapists. Cupping, Kinesiology Taping, Hot Stone, Aromatherapy, and Indie Head Massage certifications.">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .course-detail-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 35px 30px;
+            margin-bottom: 30px;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s ease;
+        }
+        
+        .course-detail-card:hover {
+            box-shadow: var(--shadow-md);
+        }
+        
+        .course-detail-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+        
+        .course-detail-header h3 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+        
+        .course-detail-meta {
+            text-align: right;
+        }
+        
+        .course-detail-price {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: var(--accent);
+            font-weight: 500;
+            line-height: 1;
+        }
+        
+        .course-detail-duration {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            margin-top: 5px;
+        }
+        
+        .course-detail-card p {
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+        
+        .course-detail-card h4 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            margin: 25px 0 12px;
+        }
+        
+        .course-detail-card ul {
+            list-style: disc;
+            padding-left: 20px;
+        }
+        
+        .course-detail-card li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+        
+        .course-contact {
+            background: var(--accent-soft);
+            border-radius: var(--radius-md);
+            padding: 25px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .course-contact p {
+            margin-bottom: 15px;
+            color: var(--charcoal);
+        }
+        
+        .course-contact a {
+            font-weight: 500;
+        }
+        
+        @media (max-width: 600px) {
+            .course-detail-header {
+                flex-direction: column;
+            }
+            
+            .course-detail-meta {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo">
+                <img src="images/logo.jpg" alt="Healica" class="logo-img">
+                <span class="logo-text">Healica</span>
+            </a>
+            
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="about.html">Services</a></li>
+                    <li><a href="courses.html">CE Courses</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                    <li><a href="index.html#book" class="btn btn-primary">Book Now</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="about.html">Services</a></li>
+            <li><a href="courses.html">CE Courses</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="index.html#book" class="btn btn-primary">Book Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Continuing Education</h1>
+        <p>Expand your skills with hands-on certification courses taught by experienced practitioners.</p>
+    </div>
+
+    <!-- Courses Section -->
+    <section class="courses" style="background: var(--off-white);">
+        <div class="container" style="max-width: 900px;">
+            
+            <!-- Cupping Therapy -->
+            <div class="course-detail-card">
+                <div class="course-detail-header">
+                    <h3>Cupping Therapy Certification</h3>
+                    <div class="course-detail-meta">
+                        <div class="course-detail-price">$300</div>
+                        <div class="course-detail-duration">8 Hours | Full Day</div>
+                    </div>
+                </div>
+                <p>Cupping therapy is an ancient healing practice that has gained popularity in modern therapeutic settings. This hands-on certification course teaches the art and science of cupping, allowing you to integrate this powerful modality into your practice.</p>
+                
+                <h4>What You'll Learn</h4>
+                <ul>
+                    <li>History and theory of cupping therapy</li>
+                    <li>Types of cups and cupping techniques (static, sliding, flash)</li>
+                    <li>Indications and contraindications</li>
+                    <li>Treatment protocols for common conditions</li>
+                    <li>Safety considerations and aftercare</li>
+                    <li>Hands-on practice with feedback</li>
+                </ul>
+                
+                <h4>Who Should Attend</h4>
+                <p>Registered Massage Therapists, Physiotherapists, Chiropractors, Acupuncturists, and other healthcare professionals looking to expand their treatment toolkit.</p>
+            </div>
+            
+            <!-- Kinesiology Taping -->
+            <div class="course-detail-card">
+                <div class="course-detail-header">
+                    <h3>Kinesiology Taping Certification</h3>
+                    <div class="course-detail-meta">
+                        <div class="course-detail-price">$300</div>
+                        <div class="course-detail-duration">8 Hours | Full Day</div>
+                    </div>
+                </div>
+                <p>Kinesiology tape is widely used in sports medicine and rehabilitation to support muscles, reduce pain, and improve movement patterns. This certification course provides comprehensive training in assessment and application techniques.</p>
+                
+                <h4>What You'll Learn</h4>
+                <ul>
+                    <li>Principles of kinesiology taping</li>
+                    <li>Tape properties and application fundamentals</li>
+                    <li>Muscle facilitation and inhibition techniques</li>
+                    <li>Lymphatic and postural corrections</li>
+                    <li>Sport-specific applications</li>
+                    <li>Common injury protocols (shoulder, knee, ankle, back)</li>
+                    <li>Hands-on practice with multiple techniques</li>
+                </ul>
+                
+                <h4>Who Should Attend</h4>
+                <p>Massage Therapists, Athletic Therapists, Physiotherapists, Chiropractors, and fitness professionals working with athletes or rehabilitation clients.</p>
+            </div>
+            
+            <!-- Hot Stone Therapy -->
+            <div class="course-detail-card">
+                <div class="course-detail-header">
+                    <h3>Hot Stone Therapy Certification</h3>
+                    <div class="course-detail-meta">
+                        <div class="course-detail-price">$275</div>
+                        <div class="course-detail-duration">4 Hours | Half Day</div>
+                    </div>
+                </div>
+                <p>Hot stone massage combines the therapeutic benefits of heat with skilled massage techniques to create a deeply relaxing and healing experience. Learn to safely and effectively integrate heated stones into your massage practice.</p>
+                
+                <h4>What You'll Learn</h4>
+                <ul>
+                    <li>Types of stones and their properties</li>
+                    <li>Proper heating and temperature safety</li>
+                    <li>Stone placement techniques</li>
+                    <li>Integration with Swedish and deep tissue massage</li>
+                    <li>Contraindications and precautions</li>
+                    <li>Full-body hot stone treatment protocol</li>
+                </ul>
+                
+                <h4>Who Should Attend</h4>
+                <p>Registered Massage Therapists looking to add a popular and profitable service to their treatment menu.</p>
+            </div>
+            
+            <!-- Indie Head Massage -->
+            <div class="course-detail-card">
+                <div class="course-detail-header">
+                    <h3>Indie Head Massage Certification</h3>
+                    <div class="course-detail-meta">
+                        <div class="course-detail-price">$200</div>
+                        <div class="course-detail-duration">4 Hours | Half Day</div>
+                    </div>
+                </div>
+                <p>Indian Head Massage is a traditional Ayurvedic practice focusing on the head, neck, shoulders, and face. This deeply relaxing treatment is excellent for stress relief, headache management, and promoting mental clarity.</p>
+                
+                <h4>What You'll Learn</h4>
+                <ul>
+                    <li>History and origins of Indian Head Massage</li>
+                    <li>Ayurvedic principles and energy balance</li>
+                    <li>Techniques for scalp, face, neck, and shoulders</li>
+                    <li>Pressure points and marma therapy basics</li>
+                    <li>Seated and table-based treatment protocols</li>
+                    <li>Oil vs. dry treatment approaches</li>
+                </ul>
+                
+                <h4>Who Should Attend</h4>
+                <p>Massage Therapists, Estheticians, and wellness practitioners looking for a versatile treatment that can be performed in various settings.</p>
+            </div>
+            
+            <!-- Aromatherapy -->
+            <div class="course-detail-card">
+                <div class="course-detail-header">
+                    <h3>Aromatherapy Make &amp; Take</h3>
+                    <div class="course-detail-meta">
+                        <div class="course-detail-price">$175</div>
+                        <div class="course-detail-duration">2 Hours</div>
+                    </div>
+                </div>
+                <p>Discover the therapeutic power of essential oils in this interactive workshop. Learn the fundamentals of aromatherapy and create your own custom blends to take home and use in your practice or personal wellness routine.</p>
+                
+                <h4>What You'll Learn</h4>
+                <ul>
+                    <li>Introduction to essential oils and their properties</li>
+                    <li>Safety guidelines and dilution ratios</li>
+                    <li>Blending for specific therapeutic goals</li>
+                    <li>Carrier oils and application methods</li>
+                    <li>Integration with massage therapy</li>
+                    <li>Create custom blends to take home</li>
+                </ul>
+                
+                <h4>Who Should Attend</h4>
+                <p>Anyone interested in aromatherapy, from healthcare professionals to wellness enthusiasts. No prior experience required.</p>
+            </div>
+            
+            <!-- Contact -->
+            <div class="course-contact">
+                <p>All prices are plus HST. Courses held at our Orillia location.</p>
+                <p>To register or inquire about upcoming course dates, contact us:</p>
+                <p><a href="mailto:cristie@healicanaturals.com">cristie@healicanaturals.com</a></p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <span class="logo-text">Healica Massage Therapy</span>
+                <p>Registered Massage Therapy, Physiotherapy, and Acupuncture in Barrie and Orillia. Serving Simcoe County since 2015.</p>
+            </div>
+            <div class="footer-col">
+                <h5>Quick Links</h5>
+                <ul>
+                    <li><a href="team.html">Our Team</a></li>
+                    <li><a href="about.html">Services</a></li>
+                    <li><a href="courses.html">CE Courses</a></li>
+                    <li><a href="careers.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Barrie</h5>
+                <ul>
+                    <li><a href="tel:7053150108">705-315-0108</a></li>
+                    <li>51 King Street, Unit 5</li>
+                    <li>Barrie, ON L4N 6B5</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h5>Orillia</h5>
+                <ul>
+                    <li><a href="tel:7053259990">705-325-9990</a></li>
+                    <li>3 Progress Drive, Unit 8</li>
+                    <li>Orillia, ON L3V 0T7</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Healica Massage Therapy. All rights reserved. Est. 2015</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
